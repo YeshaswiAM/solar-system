@@ -27,7 +27,7 @@ jobs:
         - name: Checkout repository
           uses: actions/checkout@v4
 
-        - name: Setup NodeJS Version - ${{matrix.operating_system}}
+        - name: Setup NodeJS Version - ${{matrix.nodejs_version}}
           uses: actions/setup-node@v3
           with:
             node-version: ${{matrix.nodejs_version}}
